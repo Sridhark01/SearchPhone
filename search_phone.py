@@ -37,14 +37,14 @@ numero_telefonico = input(Fore.GREEN + "Por favor, introduce el número de telé
 region = input(Fore.GREEN + "Por favor, introduce la región (ej. 'pe' para Perú): ")
 
 # Prepare the API request
-url = "https://phone-number-analyzer.p.rapidapi.com/phone-number-in-google-search"
+url = "https://advanced-phone-number-analysis.p.rapidapi.com/phone-number-in-google-search"
 payload = {
     "number": numero_telefonico,
     "region": region
 }
 headers = {
     "x-rapidapi-key": os.getenv("RAPIDAPI_KEY"),  # Fetch API key from .env
-    "x-rapidapi-host": "phone-number-analyzer.p.rapidapi.com",
+    "x-rapidapi-host": "advanced-phone-number-analysis.p.rapidapi.com",
     "Content-Type": "application/json"
 }
 
